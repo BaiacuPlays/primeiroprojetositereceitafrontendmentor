@@ -1,0 +1,189 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: hsl(30, 54%, 90%);
+}
+
+.fullcard {
+    background-color: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 700px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 70px;
+}
+
+.preparation {
+    background-color: hsl(330, 100%, 98%);
+    width: 650px;
+    height: 200px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.preparation h3{
+   margin-top: 20px;
+   color: hsl(332, 51%, 32%);
+   align-self: flex-start;
+   margin: 30px;
+   padding-left: 15px;
+}
+
+.preparation ul {
+    padding-left: 30px; 
+    margin: 0; 
+}
+
+.preparation li {
+    margin-bottom: 5px;
+    padding-left: 15px; 
+    margin-left: 30px;
+}
+
+.preparation li::marker{
+    color: hsl(332, 51%, 32%);
+}
+
+.ingredients li::marker{
+    color: hsl(332, 51%, 32%);
+}
+
+.ingredients {
+   display: flex;
+   flex-direction: column;
+   align-self: flex-start;
+   margin-left: 30px;
+   margin-top: 30px;
+}
+
+.ingredients h3{
+    margin-bottom: 15px;
+    align-self: flex-start;
+    font-family: "Young Serif", serif;
+    font-weight: 400;
+    color: hsl(14, 45%, 36%);
+    font-size: 25px;
+    
+}
+
+.instructions {
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+    margin-top: 30px;
+    text-align: left;
+ }
+ 
+ .instructions h3{
+     margin-bottom: 15px;
+     align-self: flex-start;
+     font-family: "Young Serif", serif;
+     font-weight: 400;
+     color: hsl(14, 45%, 36%);
+     font-size: 25px;
+ }
+
+ .instructions ol {
+    counter-reset: item;
+    list-style: none;
+    padding-left: 0;
+}
+
+.instructions li {
+    counter-increment: item;
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 30px;
+}
+
+.instructions li::before {
+    content: counter(item) ".";
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-weight: bold;
+    color: hsl(14, 45%, 36%);
+}
+
+.nutrition h3 {
+    margin-bottom: 15px;
+    text-align: left;
+    font-weight: 400;
+    font-size: 25px;
+    color: hsl(14, 45%, 36%);
+    font-family: "Young Serif", serif;
+}
+
+.nutrition ul {
+    list-style: none;
+    padding: 0;
+}
+
+.nutrition li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px; 
+}
+
+.nutrition span {
+    color: hsl(14, 45%, 36%);
+    font-weight: bold;
+    margin-right: 200px;
+}
+
+
+.fullcard img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.fullcard h2 {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 35px;
+    align-self: flex-start;
+    font-family: "Young Serif", serif;
+    font-weight: 400;
+}
+
+.fullcard p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+
+}
+
+.fullcard ul {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.fullcard li {
+    margin-bottom: 10px;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #000; 
+    width: 100%;
+    opacity: 0.3;
+    margin-bottom: 10px;
+  }
